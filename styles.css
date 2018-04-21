@@ -233,6 +233,192 @@ body {
   bottom: 120px;
   font-size: 42px;
 }
+
+  body {
+    background-color: rgb(0, 26, 77);
+    font-family: "Indie Flower", cursive;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    background-image: url("background-mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    margin: 0;
+    margin-left: -10px;
+    overflow: hidden;
+  }
+  .container {
+    background-color: #00aabb;
+    opacity: 0.75;
+    display: flex;
+    width: 90%;
+    height: 30%;
+    bottom: 60%;
+    position: fixed;
+    margin-top: 10px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: .4em;
+    border: 2px solid #00aabb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .container:after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 70%;
+	width: 0;
+	height: 0;
+	border: 63px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -31.5px;
+	margin-bottom: -63px;
+}
+  #author,
+   #quote {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+
+  #author {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+
+  }
+
+  #quote {
+    padding: 50px 30px 5px 30px;
+  }
+
+  #newQuote {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    background-color: #00aabb;
+    color: white;
+    border: none;
+    border-radius: .2em;
+    display: flex;
+    position: fixed;
+    align-self: center;
+    bottom: 2px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 2px 2px 5px #017d89;
+  }
+  #newQuote:hover {
+    background-color: #017d89;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  #tweet {
+    display: flex;
+    padding: 10px;
+    float: right;
+    text-decoration: none;
+    color: #006a91;
+    font-size: 28px;
+  }
+
+  #tweet:a{
+    text-decoration: none;
+  }
+  #tweet:a:visited {
+    color: blue;
+  }
+/* Tablet Styles*/
+@media only screen and (min-width: 450px) {
+  .container {
+    position: relative;
+    top: 5%;
+    bottom: 60%;
+    height: auto;
+  }
+  .wrapper {
+    background-image: url("background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0;
+    margin-left: -10px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 960px) {
+
+body {
+  background-color: rgb(0, 26, 77);
+  font-family: "Indie Flower", cursive;
+  color: white;
+  font-size: 28px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+.container {
+  position: fixed;
+  bottom: 60%;
+  max-width: 55%;
+  position: relative;
+}
+#quote {
+  width: 80%;
+}
+
+.button {
+  display:flex;
+  justify-content: center;
+}
+#newQuote {
+  margin-top: 50px;
+  width: 300px;
+  bottom: 120px;
+  font-size: 42px;
+}
 	border-top-color: #00aabb;
 	border-bottom: 0;
 	border-right: 0;
