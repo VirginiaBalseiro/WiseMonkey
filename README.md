@@ -1,0 +1,2 @@
+# WiseMonkey
+Random Quote Machine
