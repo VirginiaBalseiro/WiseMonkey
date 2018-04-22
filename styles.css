@@ -62,15 +62,15 @@
     align-self: center;
     align-items: center;
     position: relative;
-    padding: 30px;
+    padding: 5px;
     padding-bottom: 0px;
   }
 
   #author {
     font-weight: bold;
     margin-top: 5px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
     text-align: center;
     align-self: center;
     justify-content: center;
@@ -78,7 +78,7 @@
   }
 
   #quote {
-    padding: 50px 30px 5px 30px;
+    padding: 5px;
   }
 
   #newQuote {
@@ -109,11 +109,11 @@
 
   #tweet {
     display: flex;
-    padding: 10px;
+    padding: 2px;
     float: right;
     text-decoration: none;
     color: #006a91;
-    font-size: 42px;
+    font-size: 20px;
   }
 
   #tweet:a{
@@ -170,8 +170,12 @@ body {
   max-width: 55%;
   position: relative;
 }
+#author {
+  padding: 20px;
+}
 #quote {
   width: 80%;
+  padding: 30px;
 }
 
 .button {
@@ -182,4 +186,8 @@ body {
   margin-top: 50px;
   width: 300px;
   bottom: 120px;
+}
+#tweet {
+  font-size: 42px;
+  padding: 15px;
 }

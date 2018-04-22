@@ -5,9 +5,13 @@ var url =
 $(document).ready(function() {
 function getQuote() {
   $.getJSON(url, function(data) {
+    if ((data.quoteText).length < 130){
     $("#quote").html(data.quoteText);
     $("#author").html(data.quoteAuthor);
     tweetQuote();
+  } else {
+    getQuote();
+  }
   });
 }
 
