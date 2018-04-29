@@ -26,4 +26,10 @@ $("#newQuote").on("click", function() {
 
     $("#tweet").attr("href", twitterURL);
   }
+    
+    $("#social-button").on("click", function() { 
+    $("#social").toggle();
+    $("#ellipsis").toggle();
+   })
+    
 });//end of document ready
